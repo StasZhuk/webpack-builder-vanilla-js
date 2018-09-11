@@ -1,82 +1,14 @@
 <div class="footer {% if mod %}_{{mod}}{% endif %}">    
     <div class="container">    
         <div class="row">
-            <div class="col-md-6">
-                <div class="footer__content">
-                    <div class="footer-nav">
-                        <ul class="footer-nav__list row">
-                            {% for item in footer.list %}
-                            <li class="footer-nav__item-wr {% if item.title == 'products' %}col-md-9 _double-col{% endif %}{% if item.title == 'company' %}col-md-3{% endif %}">
-                                <div class="footer-nav__item">
-                                    <div data-toglle="{{ item.href }}" class="footer-nav__title">{{ item.title }}</div>
-                                    <div class="footer-nav__submenu-wr">
-                                        <ul class="footer-nav__submenu {% if item.title == 'products' %}_double-col{% endif %}{% if item.title == 'company' %}_spacing{% endif %}">
-                                            {% for subitem in item.list %}
-                                            <li class="footer-nav__submenu-item">
-                                                <a href="{{ subitem.href }}" class="footer-nav__submenu-link">
-                                                    {{ subitem.title }}
-                                                </a>
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="footer__content">
-                    <div class="footer__form">
-                        <div class="footer__form-title">Leave us a message</div>
-                        <form action="" method="post" class="form _flex" id="footer-form">
-                            <div class="form__col">
-                                <div class="form__group">
-                                    {{ form.input({title: 'your name', name: 'name'}) }}
-                                </div>
-                                <div class="form__group">
-                                    {{ form.input({title: 'your phone', name: 'phone', inputMod: 'js-form-phone'}) }}
-                                </div>
-                                <div class="form__group">
-                                    {{ form.input({title: 'your e-mail', name: 'email', inputMod: 'js-form-email'}) }}
-                                </div>
-                            </div>
-                            <div class="form__col _flex-column">
-                                <div class="form__group _grow">
-                                    {{ form.textarea({title: "your message", name: "message", mod: "_full-h", required: "true", inputMod: 'js-form-message', fieldMod: "full-h" }) }}
-                                </div>
-                                <div class="form__group">
-                                    <div class="form__submit">
-                                        <button type="submit" class="btn _full modal__submit btn-submit-js">
-                                            <span class="btn__text">send</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-12">
-                <div class="divider"></div>
+                <div class="footer__content">
+                   
+                </div>
             </div>
         </div>
-        <div class="row mb-30">
-            <ul class="footer__contacts-list">
-                {% for item in footer.buttons %}
-                <li class="col-md-3 footer__contacts-item-wr">
-                    <a class="footer__contacts-item">
-                        <span>{{ item.title }}</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="row mb-30">
+
+        <div class="row">
             <div class="col-md-3">
                 <div class="footer__adress">
                     <span>5091 Sunbeam Rd,</span>
