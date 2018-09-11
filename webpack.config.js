@@ -52,7 +52,9 @@ let twigToHtml = [
     filename: 'index.html',
     chunks: ['bundle'],
     templateParameters: {
-      all: require(path.resolve(paths.root, 'data/all.json'))
+      index: require(path.resolve(paths.root, 'data/index.json')),
+      nav: require(path.resolve(paths.root, 'data/nav.json')),
+      footer: require(path.resolve(paths.root, 'data/footer.json'))
     }
   })
 ];

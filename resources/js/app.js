@@ -8,11 +8,11 @@ window.slick = require('slick-carousel');
 
 import { svg } from './utils/svg';
 require('./modules/browserDetect');
-require('./components/modal');
-require('./bootstrap/transition');
-require('./bootstrap/collapse');
-require('./bootstrap/dropdown');
-require('./bootstrap/tab');
+// require('./components/modal');
+// require('./bootstrap/transition');
+// require('./bootstrap/collapse');
+// require('./bootstrap/dropdown');
+// require('./bootstrap/tab');
 
 const imagesContext = require.context('images', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
 imagesContext.keys().forEach(imagesContext);
@@ -29,41 +29,29 @@ if(NODE_ENV === 'development') {
   });
 $(window).on('load', function () {
   // toggle view
-  require('./modules/view-toggle');
-
-
-  // main nav dropdown menu
-  $('[data-toggle="tab"]').hover(function (e) {
-    e.preventDefault()
-    $(this).tab('show'),
-    function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    }
-  });
-
+  // require('./modules/view-toggle');
 
   // slider index
-  let sliderTestimonials = $('.slider-testimonials-js');
-  let sliderFeatured = $('.slider-featured-js');
+  // let sliderTestimonials = $('.slider-testimonials-js');
+  // let sliderFeatured = $('.slider-featured-js');
 
-  sliderTestimonials.slick({
-    infinite: true,
-    slidesToShow: 1,
-    speed: 300,
-    // adaptiveHeight: true,
-  });
+  // sliderTestimonials.slick({
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   speed: 300,
+  //   // adaptiveHeight: true,
+  // });
 
-  sliderFeatured.slick({
-    infinite: true,
-    slidesToShow: 1,
-    speed: 300,
-    dots: true
-    // adaptiveHeight: true,
-  });
+  // sliderFeatured.slick({
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   speed: 300,
+  //   dots: true
+  //   // adaptiveHeight: true,
+  // });
 
-  // slider nav append custom icons
-  $('.slick-next').html(svg({"name": "slider-next"}));
-  $('.slick-prev').html(svg({"name": "slider-prev"}));
+  // // slider nav append custom icons
+  // $('.slick-next').html(svg({"name": "slider-next"}));
+  // $('.slick-prev').html(svg({"name": "slider-prev"}));
 });
 })(jQuery);

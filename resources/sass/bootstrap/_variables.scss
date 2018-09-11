@@ -9,6 +9,14 @@ $bootstrap-sass-asset-helper: false !default;
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
+$screen-smx:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-smx-min:              $screen-smx !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone-sm:               $screen-smx-min !default;
+// Extra small screen / phone
+
+//** Deprecated `$screen-xs` as of v3.0.1
 $screen-xs:                  480px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 $screen-xs-min:              $screen-xs !default;
