@@ -1,0 +1,37 @@
+@function icon-width($icon, $size: $BFont-size) {
+  $iconMap: map_get($icons-svg, $icon);
+  $attr: map_get($iconMap, width) * $size;
+  @return $attr;
+}
+
+@function sprite-attr($icon, $attr) {
+  $newIcon: map-get($icons-svg, $icon);
+  @if $newIcon == null {
+    @warn "Can't find an icon with the name #{$icon}";
+  }
+  @return map-get($newIcon, $attr);
+}
+
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  &_s {
+    fill: currentColor;
+  }
+}
+
+@each $name, $icon in $icons-svg {
+  .icon-svg_#{$name} {
+    font-size: map_get($icon, height) / ($BFont-size / 1px) * 1rem;
+    width: map_get($icon, width) * 1em
+  }
+}
+
+//{{#shapes}}
+//
+//.icon-svg_{{base}} {
+//  font-size:({{height.inner}}/13)*1rem;
+//  width:({{width.inner}}/{{height.inner}})*1em;
+//}
+//{{/shapes}}

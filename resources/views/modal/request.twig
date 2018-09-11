@@ -1,0 +1,42 @@
+{% extends './base.twig' %}
+
+{% import '../macros/form.twig' as form %}
+
+{% set modal = {
+   id: 'modalRequest',
+   title: 'To order <span class="modal__title _acsent modal-title-js">XTREME SPORTS ARENA #2</span> please submit a form'
+} %}
+
+{% block modal_content %}
+    <div class="modal__form">
+        <form class="js-request-form form _flex">
+            <div class="form__col">
+                <div class="form__group">
+                    {{ form.input({title: 'your name', name: 'name'}) }}
+                </div>
+                <div class="form__group">
+                    {{ form.input({title: 'your phone', name: 'phone', inputMod: 'js-form-phone _modal', fieldMod: "modal"}) }}
+                </div>
+                <div class="form__group">
+                    {{ form.input({title: 'your e-mail', name: 'email', inputMod: 'js-form-email _modal', fieldMod: "modal"}) }}
+                </div>
+                <div class="form__group">
+                    {{ form.input({title: 'date and time', name: 'date', inputMod: 'js-form-date _modal'}) }}
+                </div>
+            </div>
+            <div class="form__col _flex-column">
+                <div class="form__group _grow">
+                    {{ form.textarea({title: "your message", name: "message", mod: "_full-h", required: "true", inputMod: 'js-form-message _full-h'}) }}
+                </div>
+                <div class="form__group">
+                    <div class="form__submit">
+                        <button type="submit" class="btn _full _modal btn-submit-js">
+                            <span class="btn__text">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+

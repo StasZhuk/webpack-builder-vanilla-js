@@ -1,0 +1,46 @@
+@import "mixins/float";
+@import "mixins/flex";
+@import "mixins/grid";
+@import "mixins/g-va";
+@import "mixins/gutters";
+@import "mixins/horizontal";
+@import "mixins/justify-content";
+@import "mixins/margin";
+@import "mixins/staticFooter";
+@import "mixins/textLimit";
+@import "mixins/vertical";
+
+
+/* ---------------------------------Flex-row------------------------------------ */
+@include flex-row-responsive;
+
+/* ---------------------------------Justify------------------------------------ */
+// justify-content-start-xs, justify-content-end-sm
+@include justify-content-responsive;
+
+/* ---------------------------------Grid vertical align------------------------------------ */
+// g-va-xs, g-va-sm...
+@include g-va-responsive();
+
+/* ---------------------------------Responsive vertical align------------------------------------ */
+// top-xs, middle-xs, bottom-xs....
+@include vertical();
+
+/* ---------------------------------Responsive horizontal align------------------------------------ */
+// left-xs, center-xs, right-xs....
+@include horizontal();
+
+/* ---------------------------------Responsive Gutters------------------------------------ */
+// gutters-5, gutters-xs-5, gutters-sm-5
+@include gutters-responsive((0,5,10));
+
+
+/* ---------------------------------Responsive float------------------------------------ */
+//float-right, float-left, float-none
+//float-right-xs, float-left-xs, float-none-xs
+@include float();
+
+
+/* ---------------------------------Responsive margin------------------------------------ */
+//Margin
+@include margin((0, 10, 20, 30));

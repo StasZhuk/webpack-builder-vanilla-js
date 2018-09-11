@@ -1,0 +1,9 @@
+@mixin staticFooter($h:100px) {
+  .page-buffer {
+    padding-bottom: $h;
+  }
+  .page-footer {
+    height: $h;
+    margin-top: -$h;
+  }
+}

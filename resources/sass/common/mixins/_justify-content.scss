@@ -1,0 +1,49 @@
+@mixin justify-content-responsive() {
+
+  @each $name, $breakpoint in $breakpoints {
+
+    @if($name == 'xs') {
+      .justify-content-normal {
+        justify-content: normal!important;
+      }
+
+      .justify-content-start {
+        justify-content: flex-start!important;
+      }
+
+      .justify-content-center {
+        justify-content: center!important;
+      }
+
+      .justify-content-between {
+        justify-content: space-between!important;
+      }
+
+      .justify-content-end {
+        justify-content: flex-end!important;
+      }
+    }
+
+    @media (min-width: #{$breakpoint}) {
+      .justify-content-normal-#{$name} {
+        justify-content: normal!important;
+      }
+
+      .justify-content-start-#{$name} {
+        justify-content: flex-start!important;
+      }
+
+      .justify-content-center-#{$name} {
+        justify-content: center!important;
+      }
+
+      .justify-content-between-#{$name} {
+        justify-content: space-between!important;
+      }
+
+      .justify-content-end-#{$name} {
+        justify-content: flex-end!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@mixin margin($counts) {
+
+  .mt-a {
+    margin-top: auto;
+  }
+  .mr-a {
+    margin-right: auto;
+  }
+
+  .mb-a {
+    margin-bottom: auto;
+  }
+
+  .ml-a {
+    margin-left: auto;
+  }
+
+  @each $name, $breakpoint in $breakpoints {
+
+    @each $count in $counts {
+      @if ($name == 'xs') {
+        .mt-#{$count} {
+          margin-top: $count + px!important;
+        }
+        .mb-#{$count} {
+          margin-bottom: $count + px!important;;
+        }
+      } @else {
+        @media (min-width: #{$breakpoint}) {
+          .mt-#{$count}-#{$name} {
+            margin-top: $count + px!important;;
+          }
+          .mb-#{$count}-#{$name} {
+            margin-bottom: $count + px!important;;
+          }
+
+          .mt-a-#{$name} {
+            margin-top: auto;
+          }
+
+          .mr-a-#{$name} {
+            margin-right: auto;
+          }
+
+          .mb-a-#{$name} {
+            margin-bottom: auto;
+          }
+
+          .ml-a-#{$name} {
+            margin-left: auto;
+          }
+
+        }
+      }
+    }
+
+  }
+}

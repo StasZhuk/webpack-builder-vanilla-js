@@ -1,0 +1,102 @@
+<div class="navbar" >
+      <div class="container">
+            <div class="navbar__inner-wr">
+                  <div class="navbar__inner">
+                        <div class="navbar__toggle">
+                              <button class="js-navbar-toggle navbar-toggle" aria-expanded="false" data-toggle="collapse" data-target="#navbarMenu">
+                                    <span class="navbar-toggle__inner">
+                                          <span class="navbar-toggle__sep"></span>
+                                          <span class="navbar-toggle__sep"></span>
+                                          <span class="navbar-toggle__sep"></span>
+                                    </span>
+                              </button>
+                        </div>
+                        <div class="navbar__logo">
+                              {% if mod != "main" %}
+                                    <a href="/">
+                                          <img src="assets/images/logo.svg" alt="webstorm" class="navbar__logo-img">
+                                    </a>
+                                    {% else %}
+                                    <img src="assets/images/logo.svg" alt="webstorm" class="navbar__logo-img">
+                              {% endif %}
+                        </div>
+                        <div class="navbar__content-wr">
+                              {% if mod != "main" %}      
+                                    <div class="navbar__bg-shape">
+                                          {% include '../svg/header/header-bg-shape.svg.twig' %}
+                                    </div>
+                              {% endif %}
+                              
+                              <div class="navbar__content">
+                                    <div class="navbar__content-inner">
+                                          <div class="navbar__phone-wr center-m">
+                                                <a href="tel:+70000000000" class="navbar__phone">
+                                                      {{ svg.icon({'name': 'phone', 'mod': 'navbar__phone-icon'}) }}
+                                                      <span class="navbar__phone-text">+1-604-111-1111</span>
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="navbar__menu-content">
+                                    <div class="navbar__menu-phone  mt-30">
+                                          <a href="tel:+79139340925" class="navbar__phone">
+                                                {{ svg.icon({'name': 'phone', 'mod': 'class_custom'}) }}
+                                                <span class="navbar__phone-text">+1-604-111-1111</span>
+                                          </a>
+                                    </div>
+                                    <div class="navbar__menu-request mt-10">
+                                          <button data-target="#modalRequest" class="js-modal-toggle navbar__request">
+                                                <span class="navbar__request-icon"></span>
+                                                <span class="navbar__request-text">
+                                                      Обратный звонок
+                                                </span>
+                                          </button>
+                                    </div>
+                              </div>
+                              <div id="navbarMenu" class="navbar__menu-wr collapse">
+                                    <div class="navbar__menu">
+                                          <div class="navbar__menu-nav">
+                                                <ul class="navbar-nav {% if mod %} _dark{% endif %}">
+                                                      {% for item in nav.mainMenu %}
+                                                      <li class="navbar-nav__item-wr {% if item.mod %}navbar-nav__item-wr_{{ item.mod }}{% endif %}">
+                                                            <div class="navbar-nav__item">
+                                                                  <a {% if item.page %}data-page="{{ item.page }}" {% endif %} href="{{ item.target | default(item.link) }}" class="{{ item.js | default('') }} navbar-nav__link" {% if item.submenu %}data-toggle="dropdown"{% endif %}><span>{{ item.title }}{% if item.submenu %}</span>{{ svg.icon({'name': 'play', 'mod': 'tab__icon '}) }}{% endif %}</a>
+                                                                  {% if item.submenu %}
+                                                                  <div class="navbar-nav__submenu-wr" class="dropdown-backdrop">
+                                                                        <ul class="navbar-nav__submenu">
+                                                                              {% for subitem in item.submenu %}
+                                                                              <li class="navbar-nav__submenu-item">
+                                                                                    <a data-toggle="tab" href="#{{ subitem.tab }}" {% if subitem.page %}data-page="{{ subitem.page }}" {% endif %} href="{{ subitem.target | default(subitem.link) }}" class="{{ subitem.js | default('') }} navbar-nav__sublink navbar-nav__tab-link">
+                                                                                          {{ subitem.title }}
+                                                                                    </a>
+                                                                              </li>
+                                                                              {% endfor %}
+                                                                        </ul>
+                                                                        <div class="navbar-nav__tab-content">
+                                                                              {% for subitem in item.submenu %}
+                                                                              <div class="tab-pane navbar-nav__tab-pane  {% if subitem.active %}active{% endif %}" id="{{ subitem.tab }}" role="tabpanel">
+                                                                                    <ul class="navbar-nav__tab-list">
+                                                                                                {% for tab in subitem.content %}
+                                                                                                <li class="navbar-nav__tab-item">
+                                                                                                            <a href="#" class="navbar-nav__tab-content-link">• {{ tab.title }}</a>
+                                                                                                      </li>   
+                                                                                                {% endfor %}
+                                                                                    </ul>
+                                                                              </div>
+                                                                              {% endfor %}
+                                                                        </div>
+                                                                  </div>
+                                                                  {% endif %}
+                                                            </div>
+                                                      </li>
+                                                      {% endfor %}
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+</div>

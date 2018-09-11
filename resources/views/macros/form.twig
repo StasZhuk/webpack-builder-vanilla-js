@@ -1,0 +1,22 @@
+{% macro input (params) %}
+   <label class="form-input {{ params.mod | default('') }}">
+      <span class="form-input__title">{{ params.title }}</span>
+      <input class="{{ params.inputMod | default('') }} form-input__field" type="{{ params.type|default('text') }}" {% if params.required %} required {% endif %} name="{{ params.name }}" placeholder="{{ params.placeholder }}">
+   </label>
+{% endmacro %}
+
+{% macro textarea (params) %}
+   <label class="form-input _textarea {{ params.mod | default('') }}">
+      <span class="form-input__title">{{ params.title }}</span>
+      <textarea class="form-input__field {{ params.inputMod | default('') }}" {% if params.required %} required {% endif %} name="{{ params.name }}" placeholder="{{ params.placeholder }}"></textarea>
+   </label>
+{% endmacro %}
+
+{% macro radio (params) %}
+   <label class="form-checkbox _radio {{ params.mod | default('') }}">
+      <input type="radio" class="form-checkbox__input" {% if params.checked %}checked{% endif %} name="{{ params.name }}">
+      <span class="form-checkbox__field"></span>
+      <span class="form-checkbox__title">{{ params.title }}</span>
+      <span class="form-checkbox__desc">{{ params.desc | raw }}</span>
+   </label>
+{% endmacro %}

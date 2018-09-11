@@ -1,0 +1,11 @@
+{% macro icon (params) %}
+   <svg class="icon-svg icon-svg_s icon-svg_{% if params.dir %}{{ params.dir }}--{% endif %}s-{{ params.name }} {{ params.mod }}">
+      <use xlink:href="assets/images/sprite.svg#{% if params.dir %}{{ params.dir }}--{% endif %}s-{{ params.name }}"></use>
+   </svg>
+{% endmacro %}
+
+{% macro icon_m (params) %}
+   <svg class="icon-svg icon-svg_{% if params.dir %}{{ params.dir }}--{% endif %}{{ params.name }} {{ params.mod }}">
+      <use xlink:href="assets/images/sprite.svg#{{ params.name }}"></use>
+   </svg>
+{% endmacro %}

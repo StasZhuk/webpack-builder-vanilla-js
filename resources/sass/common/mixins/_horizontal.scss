@@ -1,0 +1,33 @@
+@mixin horizontal() {
+
+  @each $name, $breakpoint in $breakpoints {
+
+    @if($name == 'xs') {
+      .left  {
+        text-align: left!important;
+      }
+
+      .center {
+        text-align: center!important;
+      }
+
+      .right {
+        text-align: right!important;
+      }
+    }
+
+    @media (min-width: #{$breakpoint}) {
+      .left-#{$name}  {
+        text-align: left!important;
+      }
+
+      .center-#{$name} {
+        text-align: center!important;
+      }
+
+      .right-#{$name} {
+        text-align: right!important;
+      }
+    }
+  }
+}

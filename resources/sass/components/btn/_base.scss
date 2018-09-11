@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    @include btn();
+    padding: 15px 50px; 
+    font-family: $FMuliSB;
+    border: none;
+    white-space: nowrap;
+    border-radius: 22px;
+    background-image: linear-gradient(to right,#F96D86, #F89A15); 
+
+    &__wr {
+        &._center {
+            text-align: center;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 10px;
+        fill: $CAcsent-sec;
+    }
+}

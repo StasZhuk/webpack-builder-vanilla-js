@@ -1,0 +1,81 @@
+{% extends '../base.twig' %}
+
+{% block header %}
+   {% include '../common/header.twig' with { "headerParams": { "sticky": "true", "mod": "main" }}  %}
+{% endblock %}
+
+{% block content %}
+
+    {# section hero BEGIN #}
+    <section class="section _hero">
+        <div class="container _center">
+
+            <div class="flex-row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="section__content-wr _ac-center">
+                        <div class="section__content">
+                            <h1 class="section__heading _hero">
+                                <span class="section__heading _hero _big">Bounce Houses</span>
+                                <br/>
+                                & Party Rentals
+                                <br/>
+                                <span class="section__heading _hero _subtitle">in Jacksonville & North Florida</span>
+                            </h1>
+                            <div class="section__text-wr">
+                                <p class="section__text _hero _light">
+                                    Rent Safe & Clean Inflatables and Party Equipment<br/>
+                                    for  Affordable Price With a High Quality Service! 
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <button class="btn btn-rentals-js" >
+                                        <span class="btn__text">view our rentals</span>
+                                    </button>
+                                </div>
+                               <div class="col-md-5">
+                                    <button class="btn _icon _border btn-video-js">
+                                        <span class="btn__text">watch our video</span>
+                                        {{ svg.icon({'name': 'play', 'mod': 'btn__icon'}) }}
+                                    </button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="section__img-wr _hero">
+                        <img src="/assets/images/hero-batut.svg" data-animate="batut" alt="childrens">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# section END #}
+
+    {# section featured BEGIN #}
+    <section class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section__content">
+
+                    </div>
+                    
+                    <div class="btn__wr _center">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    {# section END #}
+
+ 
+{% endblock %}
+
+{% block footer %}
+    {% include '../common/footer.twig' %}
+{% endblock %}

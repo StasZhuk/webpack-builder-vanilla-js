@@ -1,0 +1,208 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: unset;
+  overflow-x: hidden; 
+}
+
+/* ---------------------------------Typography------------------------------------ */
+
+html,
+body {
+  font-family: $FDefault;
+  line-height: $BLine-height;
+  font-size: $BFont-size;
+  color: $BFont-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+strong {
+  //font-family: $FLatoB;
+}
+
+/* ---------------------------------Links------------------------------------ */
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &._underline {
+    text-decoration: underline;
+  }
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* ---------------------------------Button------------------------------------ */
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ---------------------------------html body------------------------------------ */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+/* ---------------------------------Img------------------------------------ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+
+}
+
+/* ---------------------------------Paragraph------------------------------------ */
+
+p {
+  margin: 0;
+}
+
+/* ---------------------------------Input------------------------------------ */
+
+input:focus {
+  outline: none;
+}
+
+/* ---------------------------------Textarea------------------------------------ */
+
+textarea:focus {
+  outline: none;
+}
+
+/* ---------------------------------List------------------------------------ */
+
+ul,
+ol {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+svg {
+  transition-property: fill, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* ---------------------------------Disable video controls on ios------------------------------------ */
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none
+}
+
+/* ---------------------------------Grid------------------------------------ */
+
+.container {
+  &._relative {
+    position: relative;
+    z-index: 2;
+  }
+
+  &._center {
+    margin: auto;
+  }
+  
+  &._decor {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.page-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #F7F7FF;
+  pointer-events: none;
+
+  &._linear {
+    background: linear-gradient(180deg, #EFEFFF 0.17%, #F7F7FF 100%);
+  }
+}
+
+.g-va {
+  @include g-va;
+}
+
+// g-va-xs, g-va-sm...
+@include g-va-responsive();
+
+.g-rectangle {
+  @include g-rectangle;
+}
+
+.g-square {
+  @include g-square;
+}
+
+/* ---------------------------------Flex-row------------------------------------ */
+.flex-row {
+  @include flex-row;
+}
+
+//@include flex-row-responsive;
+
+/* ---------------------------------Justify------------------------------------ */
+// justify-content-start-xs, justify-content-end-sm
+@include justify-content-responsive;
+
+/* ---------------------------------Responsive vertical align------------------------------------ */
+// top-xs, middle-xs, bottom-xs....
+@include vertical();
+
+/* ---------------------------------Responsive horizontal align------------------------------------ */
+// left-xs, center-xs, right-xs....
+@include horizontal();
+
+/* ---------------------------------Responsive Gutters------------------------------------ */
+// gutters-5, gutters-xs-5, gutters-sm-5
+@include gutters-responsive((0,10px,20px));
+
+
+/* ---------------------------------Responsive float------------------------------------ */
+//float-right, float-left, float-none
+//float-right-xs, float-left-xs, float-none-xs
+@include float();
+
+
+/* ---------------------------------Responsive margin------------------------------------ */
+//Margin
+@include margin((0, 10, 20, 30));

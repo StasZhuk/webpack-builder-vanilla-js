@@ -1,0 +1,5 @@
+<header class="header{% if headerParams.mod %} {{ headerParams.mod }}{% endif %}{% if headerParams.sticky %} header-sticky{% endif %}">
+    <div class="container">
+        {% include './navbar.twig' with { "mod" :headerParams.mod } %}
+    </div>
+</header>

@@ -1,0 +1,280 @@
+{
+	"hero": {
+		"mainHeading": {
+			"heading": {
+				"title": "Bounce Houses",
+				"subtitle": "& Party Rentals"
+			},
+			"subheading": {
+				"title": "in Jacksonville & North Florida",
+				"mod": ""
+			}
+		},
+		"descr": {
+			"lineFirst": "Rent Safe & Clean Inflatables and Party Equipment",
+			"lineSecond": "for Affordable Price With a High Quality Service!"
+		},
+		"btnOne": {
+			"title": "view our rentals",
+			"href": "#",
+			"path": "rentals"
+		},
+		"btnTwo": {
+			"title": "watch our video",
+			"href": "#",
+			"path": "videos"
+		}
+	},
+	"featured": {
+		"mainHeading": {
+			"subheading": {
+				"title": "Featured Rentals",
+				"mod": ""
+			}
+		},
+		"btn": {
+			"title": "view all offers",
+			"href": "#",
+			"path": "offers"
+		},
+		"slider": [{
+				"title": "XTREME SPORTS ARENA #1",
+				"text": "The new Xtreme Sports Arena 1 is just as exciting as our regular Xtreme Sports Arena with these awesome additions: Human Demolition Ball, Twister, and Hopscotch",
+				"link": "#1",
+				"img": "featured-1.svg"
+			},
+			{
+				"title": "XTREME SPORTS ARENA #2",
+				"text": "The new Xtreme Sports Arena 2 is just as exciting as our regular Xtreme Sports Arena with these awesome additions: Human Demolition Ball, Twister, and Hopscotch",
+				"link": "#2",
+				"img": "featured-1.svg"
+			},
+			{
+				"title": "XTREME SPORTS ARENA #3",
+				"text": "The new Xtreme Sports Arena 3 is just as exciting as our regular Xtreme Sports Arena with these awesome additions: Human Demolition Ball, Twister, and Hopscotch",
+				"link": "#3",
+				"img": "featured-1.svg"
+			}
+		]
+	},
+	"categories": {
+		"mainHeading": {
+			"heading": {
+				"title": "all categories",
+				"mod": ""
+			},
+			"subheading": {
+				"title": "Check out our brand new attractions",
+				"mod": ""
+			}
+		},
+		"btn": {
+			"title": "view all categories",
+			"href": "#",
+			"path": "categories"
+		},
+		"list": [{
+				"title": "Bounce houses",
+				"link": "/category.html",
+				"img": "categories-1",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Slides",
+				"link": "/category.html",
+				"img": "categories-2",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Fun games",
+				"link": "/category.html",
+				"img": "categories-3",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Combos",
+				"link": "/category.html",
+				"img": "categories-4",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Obstacle cources",
+				"link": "/category.html",
+				"img": "categories-5",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Tables, chairs & tents",
+				"link": "/category.html",
+				"img": "categories-6",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Fun food machines",
+				"link": "/category.html",
+				"img": "categories-7",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			},
+			{
+				"title": "Package deals",
+				"link": "/category.html",
+				"img": "categories-8",
+				"alt": "img-name",
+				"imgTitle": "img-title"
+			}
+		]
+	},
+	"about": {
+		"mainHeading": {
+			"heading": {
+				"title": "who we are",
+				"mod": ""
+			},
+			"subheading": {
+				"title": "About Allie’s Island",
+				"mod": ""
+			}
+		},
+		"btn": {
+			"title": "learn more",
+			"href": "#",
+			"path": "about"
+		},
+		"text": "Allie Island is a locally owned and professionally operated family business located in Jacksonville, Florida. We provide Jacksonville, Orange Park, St Augustine, Ponte Vedra, Nocatee, & the Northeast Florida area with children's inflatable bounce houses, water slide rentals, interactive games, & fun attractions. You deal directly with us not an answering service or a delivery company."
+	},
+	"advantages": {
+		"mainHeading": {
+			"heading": {
+				"title": "our advantages",
+				"mod": ""
+			},
+			"subheading": {
+				"title": "5 reasons to order from us",
+				"mod": ""
+			}
+		},
+		"list": [{
+				"title": {
+					"lineFirst": "We show up",
+					"lineSecond": "& on time"
+				},
+				"img": "advantages--1",
+				"text": "Some brief text describing one of the advantages"
+			},
+			{
+				"title": {
+					"lineFirst": "Cleanest",
+					"lineSecond": "equipment"
+				},
+				"img": "advantages--2",
+				"text": "Some brief text describing one of the advantages"
+			},
+			{
+				"title": {
+					"lineFirst": "Price",
+					"lineSecond": "won’t change"
+				},
+				"img": "advantages--3",
+				"text": "Some brief text describing one of the advantages"
+			},
+			{
+				"title": {
+					"lineFirst": "Always friendly",
+					"lineSecond": "staff"
+				},
+				"img": "advantages--4",
+				"text": "Some brief text describing one of the advantages"
+			},
+			{
+				"title": {
+					"lineFirst": "We are in touch",
+					"lineSecond": "all the rent time"
+				},
+				"img": "advantages--5",
+				"text": "Some brief text describing one of the advantages"
+			}
+		]
+	},
+	"workwith": {
+		"mainHeading": {
+			"heading": {
+				"title": "who we work with",
+				"mod": ""
+			},
+			"subheading": {
+				"title": "Check out our special offers for clients",
+				"mod": ""
+			}
+		},
+		"list": [{
+				"title": "Birthday parties",
+				"img": "workwith-1",
+				"alt": "workwith"
+			},
+			{
+				"title": "Corporate events",
+				"img": "workwith-2",
+				"alt": "workwith"
+			},
+			{
+				"title": "Church festivals",
+				"img": "workwith-3",
+				"alt": "workwith"
+			},
+			{
+				"title": "School carnivals",
+				"img": "workwith-4",
+				"alt": "workwith"
+			}
+		]
+	},
+	"testimonials": {
+		"mainHeading": {
+			"heading": {
+				"title": "what people say",
+				"mod": ""
+			},
+			"subheading": {
+				"title": "Testimonials",
+				"mod": "_second _black"
+			}
+		},
+		"btn": {
+			"title": "all reviews",
+			"href": "#",
+			"path": "reviews"
+		},
+		"list": [{
+				"name": "Andy R.",
+				"data": "04/17/2018",
+				"text": "This is the best party rental business I have dealt with. I use party rentals very often for kids parties, and I am 100% satisfied with Allie Island. They have excellent customer service skills and made the process painless and flawless.",
+				"link": "#",
+				"img": "author.jpg",
+				"rating": "4"
+			},
+			{
+				"name": "Andy B.",
+				"data": "04/17/2017",
+				"text": "This is the best party rental business I have dealt with. I use party rentals very often for kids parties, and I am 100%.",
+				"link": "#",
+				"img": "author.jpg",
+				"rating": "3"
+			},
+			{
+				"name": "Andy B.",
+				"data": "04/17/2017",
+				"text": "This is the best party rental business I have dealt with. I use party rentals very often for kids parties, and I am 100%.",
+				"link": "#",
+				"img": "author.jpg",
+				"rating": "3"
+			}
+		]
+	}
+}

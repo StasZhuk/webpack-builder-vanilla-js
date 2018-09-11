@@ -1,0 +1,17 @@
+<div class="hidden">
+   <div {% if modal.id %}id="{{ modal.id }}"{% endif %} class="modal {% if modal.mod %}_{{ modal.mod }}{% endif %}">
+   <div class="modal__inner">
+      <div class="modal__close"></div> 
+      <div class="modal__header">
+         {% block modal_header%}
+            <h3 class="modal__title">{{ modal.title }}</h3>
+         {% endblock %}
+      </div>
+      <div class="modal__content">
+         {% block modal_content %}
+
+         {% endblock %}
+      </div>
+   </div>
+</div>
+</div>

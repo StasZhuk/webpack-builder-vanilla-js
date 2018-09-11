@@ -1,0 +1,128 @@
+{
+    "list": {
+        "products": {
+            "title": "products",
+            "collapse": "productsList",
+            "list": [{
+                    "title": "bounce houses",
+                    "href": "#"
+                },
+                {
+                    "title": "water slides",
+                    "href": "#"
+                },
+                {
+                    "title": "combo units wet",
+                    "href": "#"
+                },
+                {
+                    "title": "combo units dry",
+                    "href": "#"
+                },
+                {
+                    "title": "dry slides",
+                    "href": "#"
+                },
+                {
+                    "title": "obstacle courses",
+                    "href": "#"
+                },
+                {
+                    "title": "interactive sports",
+                    "href": "#"
+                },
+                {
+                    "title": "fun food machines",
+                    "href": "#"
+                },
+                {
+                    "title": "tables, chairs, tents",
+                    "href": "#"
+                },
+                {
+                    "title": "specials",
+                    "href": "#"
+                },
+                {
+                    "title": "price list",
+                    "href": "#"
+                },
+                {
+                    "title": "repairs",
+                    "href": "#"
+                }
+            ]
+        },
+        "company": {
+            "title": "company",
+            "collapse": "companyList",
+            "list": [{
+                    "title": "about us",
+                    "href": "#"
+                },
+                {
+                    "title": "employment",
+                    "href": "#"
+                },
+                {
+                    "title": "our partners",
+                    "href": "#"
+                },
+                {
+                    "title": "faqs",
+                    "href": "#"
+                },
+                {
+                    "title": "contact us",
+                    "href": "#"
+                },
+                {
+                    "title": "meet the team",
+                    "href": "#"
+                }
+            ]
+        }
+    },
+    "buttons": [{
+            "title": "Visit us",
+            "js": "",
+            "link": ""
+        },
+        {
+            "title": "Call us",
+            "js": "",
+            "link": ""
+        },
+        {
+            "title": "E-mail us",
+            "js": "",
+            "link": ""
+        },
+        {
+            "title": "Follow us",
+            "js": "",
+            "link": ""
+        }
+    ],
+    "socials": [{
+            "title": "facebook",
+            "href": "#",
+            "mod": ""
+        },
+        {
+            "title": "google",
+            "href": "#",
+            "mod": ""
+        },
+        {
+            "title": "instagram",
+            "href": "#",
+            "mod": ""
+        },
+        {
+            "title": "twitter",
+            "href": "#",
+            "mod": ""
+        }
+    ]
+}

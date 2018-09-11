@@ -1,0 +1,11 @@
+//line-height, line-count, font-size
+@mixin textLimit($lh, $lc, $fs:null) {
+  line-height: $lh;
+  overflow: hidden;
+  height: $lh  * $lc;
+  @if $fs == null {
+    font-size: $lh;
+  } @else {
+    font-size: $fs;
+  }
+}
