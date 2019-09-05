@@ -3,10 +3,10 @@ imagesContext.keys().forEach(imagesContext);
 
 import '../sass/main.scss';
 
-// if(NODE_ENV === 'development') {
-//   require('../views/pages/index.twig');
-// }
+if(NODE_ENV === 'development') {
+  require('../views/pages/index.twig');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('object');
+
 })

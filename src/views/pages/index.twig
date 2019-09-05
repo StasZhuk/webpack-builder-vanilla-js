@@ -1,31 +1,16 @@
 {% extends '../base.twig' %}
-
-{% block header %}
-   <!-- {% include '../common/header.twig' with { "headerParams": { "sticky": "false", "mod": "main" }}  %} -->
-   {% include '../common/header.twig' %}
-{% endblock %}
+{% set route = 'home' %}
 
 {% block content %}
 
     {# section BEGIN #}
-    <section class="section _hero">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section__content">
-
-                    </div>
-
-
-                </div>
-            </div>
+    <section class="section">
+        <div class="center">
+            <div class="app" id="app"></div>
         </div>
     </section>
     {# section END #}
- 
+
 {% endblock %}
 
-{% block footer %}
-    {% include '../common/footer.twig' %}
-{% endblock %}
+
