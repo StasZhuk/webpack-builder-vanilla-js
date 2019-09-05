@@ -1,9 +1,9 @@
 const path = require('path');
 
 const paths =  {
-  root: 'resources',
-  public: 'public',
-  clean: ['public']
+  root: 'src',
+  public: 'build',
+  clean: ['build']
 };
 
 module.exports = paths;

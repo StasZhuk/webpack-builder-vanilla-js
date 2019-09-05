@@ -1,0 +1,54 @@
+/* ---------------------------------Hide------------------------------------ */
+.hidden {
+  display: none !important;
+}
+
+/* ---------------------------------PageBuffer------------------------------------ */
+
+.page-buffer {
+    position: relative;
+
+//  &__end {
+//    margin-top: 35px;
+//    @media(min-width: $screen-md) {
+//      margin-top: 50px;
+//    }
+//
+//    @media(min-width: $screen-lg) {
+//      margin-top: 80px;
+//    }
+//  }
+}
+
+/* ---------------------------------Page wrapper------------------------------------ */
+
+.page-wrapper {
+  overflow-x: hidden;
+}
+
+/* ---------------------------------Page-helper------------------------------------ */
+
+.page-helper {
+  min-height: 0.1px;
+}
+
+/* ---------------------------------Page footer------------------------------------ */
+
+.page-footer {
+  //padding-top: 20px;
+}
+
+@media (min-width: $screen-md) {
+  .page-footer {
+    //padding-top: 40px;
+  }
+}
+
+/* ---------------------------------Static Footer------------------------------------ */
+
+// @media (min-width: $screen-sm-min) {
+//   .page-wrapper {
+//     min-height: 100%;
+//   }
+//   //@include staticFooter(40px);
+// }

@@ -2,9 +2,7 @@
 /.idea/
 /node_modules/
 /public/
-/resources/html/
-/resources/sass/common/_sprite.scss
-/resources/sass/common/_svg.scss
-/resources/assets/svg/
-/resources/assets/images/sprite.png
-/resources/assets/images/sprite.svg
+/src/html/
+/src/assets/svg/
+/src/assets/images/sprite.png
+/src/assets/images/sprite.svg
